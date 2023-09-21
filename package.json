@@ -37,6 +37,7 @@
     "build": "yarn lint && yarn build:docs && yarn build:lib",
     "build:docs": "vue-cli-service build --dest docs",
     "build:lib": "vue-cli-service build --target lib --name vue-command ./src/library.js",
+    "prepare": "yarn build",
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
     "test": "vue-cli-service test:unit"

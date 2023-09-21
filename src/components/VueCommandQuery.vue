@@ -12,7 +12,7 @@
       <input
         ref="queryRef"
         v-model="local.query"
-        class="vue-command__query__input"
+        class="vue-command__query__input tw-reset"
         :disabled="isOutdatedQuery"
         :placeholder="placeholder"
         :style="queryStyle"
@@ -492,6 +492,10 @@ defineExpose({
 </script>
 
 <style lang="scss">
+.tw-reset {
+  all: revert;
+}
+
 .vue-command,
 .vue-command--invert {
 
